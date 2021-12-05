@@ -24,6 +24,7 @@ public class EmployeeCtrl {
 	@RequestMapping(value="/create",method = RequestMethod.POST)
 	public Employee createEmployee(@RequestBody Employee employee){
 		employee.setEid(UUID.randomUUID().toString());
+		System.out.println("test123");
 		list.add(employee);
 		return employee;
 	}
